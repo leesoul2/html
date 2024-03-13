@@ -1,0 +1,87 @@
+/* layout */
+
+body{
+    background-color: antiquewhite;
+    border: 1px solid black;
+}
+div.wrap{
+    border: 1px solid black;
+}
+header{
+    /* layout - 01 
+    전체화면에서 좌우가운데
+    width
+    margin : 0 auto*/
+    /* 가운데 정렬 */
+    width: 960px;
+    margin: 0 auto;
+
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+.wrap > .wrap-nav{
+    background-color: cornflowerblue;
+    border: 1px solid black;
+}
+.wrap > .wrap-nav > nav{
+    background-color: cornflowerblue;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+.wrap-content{
+    width: 960px;
+    margin: 0 auto;
+    border: 1px solid black;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+section{
+    /* 디스플레이 블럭이지만 일부영역만 사용.  왼쪽  float:left; 정렬. */
+    /* width 지정. */
+    /* 80퍼는 왼쪽 정렬 */
+    float: left;
+    width: 80%;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid black;
+}
+article{
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+aside{
+    /* 디스플레이 블럭이지만 일부영역만 사용.  오른쪽  float:right; 정렬. */
+    /* width 지정. */
+    /* 20퍼는 오른쪽 정렬 */
+    float: right;
+    width: 20%;
+    background-color: aliceblue;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+footer{
+    /* 디스플레이 블럭이지만 일부영역만 사용하다가 클리어 하고 싶을 때
+    clear */
+    /* 클리어 중요 필수 */
+    clear: both;
+    border: 1px solid black;
+    width: 960px;
+    margin: 0 auto;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+
+
+/* font size */
+.fs-1{
+    font-size: 24px;
+}
+.fs-2{
+    font-size: 18px;
+}
+.fs-3{
+    font-size: 16px;
+}
+.fs-4{
+    font-size: 14px;
+}

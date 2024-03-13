@@ -1,0 +1,21 @@
+/* @import url(./reset.css); */
+span{
+    color: cornflowerblue;
+}
+#a1{
+    text-decoration-line: none;
+        }
+input{
+    background-color: blueviolet;
+        }
+label{
+    background-color: aqua;
+}
+.tc-red{
+    color: red;
+    font-style: italic;
+}
+.bg-blue{
+    background-color: blue;
+    font-style: italic;
+}

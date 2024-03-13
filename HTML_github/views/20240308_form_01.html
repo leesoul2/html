@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폼태그처음</title>
+    <style>
+        @import url(../css/my.css);
+        span{
+            color: darkseagreen;
+        }
+    </style>
+<!--    
+   <link href="../css/my.css" rel="stylesheet" type="text/css"> -->
+
+</head>
+
+<body>
+    <a href="#n5v">내부링크</a>
+    <h1 class="tc-red bg-blue">input type 종류별</h1>
+    <form method="get" action="#" id="n1text">
+        <div>
+        <label for="n1text">text - value = 사용자 입력</label>
+        <input type="text" name="n1" id="n1text" class="input3 text2">
+    </div>
+    <div>
+    <span>password - value = 사용자 입력</span>
+        <input type="password" name="n2">
+    </div>
+    <div>
+        <span>hidden</span>
+        <input type="hidden" name="n3" value="value필수">
+    </div>
+    <div>
+    <span>button - 사용자 입력 데이터 전송 용도가 아니므로 네임 설정x</span>
+        <input type="button" name="n4쓸 필요 없음." value="버튼1">
+    </div>
+    <div>
+        <span>checkbox - name속성값으로 그룹핑</span>
+        <label for="n5v">배구:</label><input type="checkbox" name="v" id="n5v">
+        <label for="n5b">야구:</label><input type="checkbox" name="b" id="n5b">
+        <label for="n5s">축구:</label><input type="checkbox" name="s" id="n5s">
+        <span>클라이밍:</span><input type="checkbox" name="c" id="n5c">
+        <br>
+        <span>Java:</span><input type="checkbox" name="j" >
+        <span>HTML:</span><input type="checkbox" name="h" checked="checked">
+        <span>JDBC:</span><input type="checkbox" name="d" checked="checked"> 
+    </div>
+    <div>
+    <span>file - 사용자 입력 데이터 전송 용도가 아니므로 네임 설정x </span>
+        <input type="file" name="n6">
+    </div>
+    <div>
+        <span>radio - name속성값으로 그룹핑</span>
+        <br>
+        <span>Java:</span><input type="radio" name="J" checked="checked">
+        <span>HTML:</span><input type="radio" name="h">
+        <br>
+        <span>JS:</span><input type="radio" name="s">
+        <span>Oracle:</span><input type="radio" name="n11">
+    </div>
+    <div>
+        <span>submit - 사용자 입력 데이터 전송 용도가 아니므로 네임 설정x</span>
+        <input type="submit" name="n8">
+    </div>
+    <div>
+        <span>reset - 사용자 입력 데이터 전송 용도가 아니므로 네임 설정x</span>
+        <input type="reset" name="n9">
+    </div>
+
+
+    </form>
+
+
+
+    <h1>web31copy dept insert</h1>
+    <form method="get" action="http://127.0.0.1:8080/web31/dept/insert" target="">
+        <input type="text" name="deptno">
+        <input type="text" name="dname">
+        <input type="text" name="loc" value="seoul">
+
+        <input type="submit" value="보내기">
+        <input type="reset" value="리셋">
+    </form>
+    <form method="get" action="http://127.0.0.1:8080/web31/dept/insert" target="">
+        <fieldset>
+            <legend>부서추가</legend>
+            <div>
+                <span>deptno:</span>
+                <input type="text" name="deptno">
+            </div>
+            <div>
+                dname: <input type="text" name="dname">
+            </div>
+            <div>
+                loc: <input type="text" name="loc" value="seoul">
+            </div>
+        </fieldset>
+            <div>
+                <input type="submit" value="보내기">
+                <input type="reset" value="리셋">
+            </div>
+        
+    </form>
+</body>
+
+</html>
